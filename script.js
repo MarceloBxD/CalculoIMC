@@ -2,6 +2,7 @@ var resultado = document.querySelector('.resultado');
 var btn = document.querySelector('.button');
 var peso = document.getElementById('peso');
 var altura = document.getElementById('altura');
+// 
 
 const formula = Number(peso/Math.pow(altura, 2)).toFixed(2);
 btn.addEventListener('click', (e) => {
