@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    text-align: center;
+}
+
+body{
+    background-image: linear-gradient(90deg, #000, #f00);
+}
+
+.calculadoraIMC{
+    width: 300px;
+    height: 450px;
+    border-radius: 20px;
+    background-color: #000;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.calculadoraIMC h1{
+    color: #fff;
+}
+
+.line{
+    background-color: #fff;
+    height: 1px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+label{
+    color: #fff;
+    font-size: 16px;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 5px;
+}
+
+.form input{
+    padding: 3px;
+}
+
+button{
+    padding: 5px;
+    border-radius: 20px;
+    background-color: #fff;
+    cursor: pointer;
+    margin-top: 5px;
+    transition: all 0.4s linear;
+}
+
+button:hover{
+    background-color: red;
+}
+
+.resultado{
+    width: 80%;
+    height: 30px;
+    background-color: #fff;
+    margin: 0 auto;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s linear;
+    animation:normal;
+    animation: transitionResult 1s forwards;
+}
+
+.message{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 150px;
+    background-color: #fff;
+    border-radius: 20px;
+    margin: 30px auto;
+}
+
+.hidden{
+    display: none;
+}
+
+@keyframes transitionResult{
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
